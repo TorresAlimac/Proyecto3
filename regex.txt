@@ -1,0 +1,20 @@
+Tarea
+Torres R. Camila
+
+1. Caja TATA
+grep -nEo 'TATA[AT]{2}' secuencias.txt
+
+2. Codones de inicio
+grep -nEo 'ATG|GTG|TTG' secuencias.txt
+
+3. Codones de paro
+grep -nEo 'TAA|TAG|TGA' secuencias.txt
+
+4. Ricas en GC (2+)
+grep -nEo 'G{2,}C{2,}|C{2,}G{2,}' secuencias.txt
+
+5. Repeticiones Ca (x5)
+grep -nEo '(CA){5,}' secuencias.txt
+
+6. Splicing
+grep -nE 'GT[ACGT]{3,100}AG' secuencias.txt
